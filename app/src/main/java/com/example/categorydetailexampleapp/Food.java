@@ -44,4 +44,10 @@ public class Food {
     public void setImageResourceID(int imageResourceID) {
         this.imageResourceID = imageResourceID;
     }
+
+    public static final Food[] myBreakfast = {
+            new Food("Pancakes", 6.99, "4 pancakes", R.drawable.pancakes),
+            new Food("Waffles", 7.50, "Crispy Golden Brown", R.drawable.waffles)
+    };
+    int[] nums = {1, 2, 3, 4};
 }
