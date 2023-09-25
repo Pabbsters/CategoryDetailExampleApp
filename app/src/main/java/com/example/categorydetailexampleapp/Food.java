@@ -33,6 +33,7 @@ public class Food implements Parcelable {
 
 
 
+
     // this code is needed for the Food class to work with Parcelable
     // this code needs no changes other than replacing the word food with another word for new project.
     public static final Parcelable.Creator<Food> CREATOR = new
