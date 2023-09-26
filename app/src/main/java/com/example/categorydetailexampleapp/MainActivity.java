@@ -9,15 +9,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
-
-public class MainActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
     public class MainActivity extends AppCompatActivity {
 
         protected void onCreate(Bundle savedInstanceState) {
@@ -42,22 +33,22 @@ public class MainActivity extends AppCompatActivity {
 
                     // the choices for the menu on MainActivity coincide with the values in arr in strings.xml file
                     if (position == 0) {                    // they chose breakfast
-                        for (Food f : Food.breakfast) {      // add all the elements for this array to the arraylist
+                        for (Food f : Food.myBreakfast) {      // add all the elements for this array to the arraylist
                             listData.add(f);
                         }
                     } else if (position == 1) {
-                        for (Food f : Food.lunch) {        // they chose lunch
+                        for (Food f : Food.myLunch) {        // they chose lunch
                             listData.add(f);
                         }
                     } else if (position == 2) {
-                        for (Food f : Food.dinner) {        // they chose dinner
+                        for (Food f : Food.myDinner) {        // they chose dinner
                             listData.add(f);
                         }
                     }
 
                     // Send this particular ArrayList of Food data to the next activity, where we display
                     // each name of each object in the ArrayList.
-                    intent.putParcelableArrayListExtra(“Array Values”, listData);
+                    intent.putParcelableArrayListExtra("Array Values", listData);
                     startActivity(intent);
                 }
             };
@@ -72,4 +63,3 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-}

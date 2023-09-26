@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/coolrock_logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
@@ -16,7 +16,7 @@
             android:name=".DetailActivity"
             android:exported="false"
             android:label= "Choose an Item"
-            android:parentActivityName=".CategoryActivity"/>
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".CategoryActivity"
             android:exported="false"

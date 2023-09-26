@@ -30,6 +30,17 @@ public class Food implements Parcelable {
         desc = "";
         imageResourceID = 0;
     }
+    public static final Food[] myBreakfast = {
+            new Food("Pancakes", 6.99, "4 pancakes", R.drawable.pancake),
+            new Food("Waffles", 7.50, "Crispy Golden Brown", R.drawable.waffles)
+
+    };
+    public static final Food[] myLunch = {
+            new Food("Sandwich", 6.99, "4 pancakes", R.drawable.sandwich),
+    };
+    public static final Food[] myDinner = {
+            new Food("Rice", 6.99, "4 pancakes", R.drawable.rice),
+    };
 
 
 
@@ -69,7 +80,7 @@ public class Food implements Parcelable {
 
     public String toString() {
         return this.name;
-
+    }
         /**
          * This is what is used when we send the Food object through an intent
          * It is also a method that is part of the Parceable interface and is needed
@@ -98,10 +109,6 @@ public class Food implements Parcelable {
          * @return
          */
 
-        @Override
-        public int describeContents() {
-            return 0;
-        }
 
 
     public String getName() {
@@ -138,17 +145,7 @@ public class Food implements Parcelable {
 
 
 
-    public static final Food[] myBreakfast = {
-            new Food("Pancakes", 6.99, "4 pancakes", R.drawable.pancake),
-            new Food("Waffles", 7.50, "Crispy Golden Brown", R.drawable.waffles)
 
-    };
-        public static final Food[] myLunch = {
-                new Food("Sandwich", 6.99, "4 pancakes", R.drawable.sandwich),
-           };
-        public static final Food[] myDinner = {
-                new Food("Rice", 6.99, "4 pancakes", R.drawable.rice),
-        };
     int[] nums = {1, 2, 3, 4};
 
     @Override
@@ -156,8 +153,6 @@ public class Food implements Parcelable {
         return 0;
     }
 
-    @Override
-    public void writeToParcel(@NonNull Parcel parcel, int i) {
 
     }
-}
+

@@ -21,7 +21,7 @@ public class CategoryActivity extends AppCompatActivity {
         Intent intent = getIntent();
         // Gets the particular ArrayList that was passed in of the specific type.
         // In this case, of type Food.
-        ArrayList<Food> dataToDisplay = intent.getParcelableArrayListExtra(“Array List”);
+        ArrayList<Food> dataToDisplay = intent.getParcelableArrayListExtra("Array Values");
 
         // The ArrayAdapter is what will take the data from the ArrayList and feed it to the ListView
         // You can create your own XML layout to describe how each row will look. This is the default layout,
@@ -40,7 +40,7 @@ public class CategoryActivity extends AppCompatActivity {
                 Intent intent = new Intent(CategoryActivity.this, DetailActivity.class);
                 // Sends the specific object at index i to the Detail activity
                 // In this case, it is sending the particular Food object
-                intent.putExtra(“Chosen Food”, dataToDisplay.get(position));
+                intent.putExtra("Chosen Food", dataToDisplay.get(position));
 
                 startActivity(intent);
             }

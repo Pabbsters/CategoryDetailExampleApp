@@ -5,19 +5,33 @@
     android:layout_height="match_parent"
     tools:context=".DetailActivity">
 
-
     <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
-
-    <TextView
-        android:id="@+id/textView"
+        android:id="@+id/pancakes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="3"
-        android:text="Pizza"
+        android:text="Pancakes"
         android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+    <TextView
+        android:id="@+id/waffles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="Waffles"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+    <ImageView
+        android:id="@+id/pancakeim"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picSize"
+        android:src="@drawable/pancake" />
+    <ImageView
+        android:id="@+id/wafflesim"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picSize"
+        android:src="@drawable/waffles" />
+
+
+
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>
