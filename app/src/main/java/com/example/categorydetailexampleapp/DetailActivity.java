@@ -17,7 +17,7 @@ public class DetailActivity extends AppCompatActivity {
         try {
             // This gets the particular Detailed object we are displaying
             // In this case, it is a Food object.
-            Food myFood = intent.getParcelableExtra(“Chosen Food”);
+            Food myFood = intent.getParcelableExtra("Array Values”);
             /** / This page will display the specific Detailed data for what your app is showing.
             // Get references to the xml views for name, price, desc, and photo
             // set values on the screen based on the object that was passed to this Detail activity **/

@@ -138,11 +138,17 @@ public class Food implements Parcelable {
 
 
 
-
-        public static final Food[] myBreakfast = {
-            new Food("Pancakes", 6.99, "4 pancakes", R.drawable.pancakes),
+    public static final Food[] myBreakfast = {
+            new Food("Pancakes", 6.99, "4 pancakes", R.drawable.pancake),
             new Food("Waffles", 7.50, "Crispy Golden Brown", R.drawable.waffles)
+
     };
+        public static final Food[] myLunch = {
+                new Food("Sandwich", 6.99, "4 pancakes", R.drawable.sandwich),
+           };
+        public static final Food[] myDinner = {
+                new Food("Rice", 6.99, "4 pancakes", R.drawable.rice),
+        };
     int[] nums = {1, 2, 3, 4};
 
     @Override

@@ -42,15 +42,15 @@ public class MainActivity extends AppCompatActivity {
 
                     // the choices for the menu on MainActivity coincide with the values in arr in strings.xml file
                     if (position == 0) {                    // they chose breakfast
-                        for (Food f : Food.breakfastItems) {      // add all the elements for this array to the arraylist
+                        for (Food f : Food.breakfast) {      // add all the elements for this array to the arraylist
                             listData.add(f);
                         }
                     } else if (position == 1) {
-                        for (Food f : Food.lunchItems) {        // they chose lunch
+                        for (Food f : Food.lunch) {        // they chose lunch
                             listData.add(f);
                         }
                     } else if (position == 2) {
-                        for (Food f : Food.dinnerItems) {        // they chose dinner
+                        for (Food f : Food.dinner) {        // they chose dinner
                             listData.add(f);
                         }
                     }

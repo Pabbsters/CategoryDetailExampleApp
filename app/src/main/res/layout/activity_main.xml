@@ -14,13 +14,25 @@
         android:layout_marginLeft="10dp"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/pancake"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picSize"
+        android:src="@drawable/pancake" />
+    <ImageView
+        android:id="@+id/waffles"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picSize"
+        android:src="@drawable/waffles" />
+    <ImageView
+        android:id="@+id/sandwich"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picSize"
+        android:src="@drawable/sandwich" />
+    <ImageView
+        android:id="@+id/rice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picSize"
+        android:src="@drawable/rice" />
 
 </androidx.appcompat.widget.LinearLayoutCompat >
