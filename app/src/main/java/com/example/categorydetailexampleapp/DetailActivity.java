@@ -24,9 +24,9 @@ public class DetailActivity extends AppCompatActivity {
             // Get references to the xml views for name, price, desc, and photo
             // set values on the screen based on the object that was passed to this Detail activity **/
 
-            ImageView pancake = findViewById(R.id.pancakeim);
-            ImageView waffles = findViewById(R.id.wafflesim);
-            TextView pancake2 =  findViewById(R.id.pancake);
+            ImageView pancake = findViewById(R.id.pancake);
+            ImageView waffles = findViewById(R.id.waffles);
+
 
 
             if (myFood.getImageResourceID() == 0) {

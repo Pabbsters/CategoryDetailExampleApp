@@ -3,32 +3,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".DetailActivity">
 
     <TextView
-        android:id="@+id/pancakes"
+        android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="3"
-        android:text="Pancakes"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+        android:layout_weight="1"
+        android:text="Name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:id="@+id/waffles"
+        android:id="@+id/price"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="3"
-        android:text="Waffles"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+        android:layout_weight="1"
+        android:text="Price" />
+
     <ImageView
-        android:id="@+id/pancakeim"
+        android:id="@+id/pic"
         android:layout_width="match_parent"
         android:layout_height="@dimen/picSize"
-        android:src="@drawable/pancake" />
-    <ImageView
-        android:id="@+id/wafflesim"
+        android:src="@drawable/waffles"
+        android:layout_weight="2"/>
+
+    <TextView
+        android:id="@+id/desc"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/picSize"
-        android:src="@drawable/waffles" />
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Desc" />
 
 
 

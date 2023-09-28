@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="myPadding">10dp</dimen>
+    <dimen name = "myPadding">10dp</dimen>
+    <dimen name = "customPadding">15dp</dimen>
     <dimen name = "picSize">150dp</dimen>
+    <dimen name = "nameCategorySize">30sp</dimen>
+    <dimen name = "descCategorySize">15sp</dimen>
+    <dimen name = "priceCategorySize">20sp</dimen>
 </resources>
