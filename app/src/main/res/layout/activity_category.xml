@@ -10,7 +10,7 @@
         android:id="@+id/categoryOptions"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimens/customPadding"/>
+        android:layout_marginLeft="@dimen/customPadding"/>
 
 
 

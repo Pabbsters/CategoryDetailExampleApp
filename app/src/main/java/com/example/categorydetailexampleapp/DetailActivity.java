@@ -24,9 +24,17 @@ public class DetailActivity extends AppCompatActivity {
             // Get references to the xml views for name, price, desc, and photo
             // set values on the screen based on the object that was passed to this Detail activity **/
 
-            ImageView pancake = findViewById(R.id.pancake);
-            ImageView waffles = findViewById(R.id.waffles);
 
+
+            TextView nameTV = findViewById(R.id.name);
+            TextView priceTV = findViewById(R.id.price);
+            ImageView picTV = findViewById(R.id.pic);
+            TextView descTV = findViewById(R.id.desc);
+
+
+            nameTV.setText(myFood.getName());
+            priceTV.setText("$" + myFood.getPrice());
+            descTV.setText(myFood.getDesc());
 
 
             if (myFood.getImageResourceID() == 0) {
@@ -34,7 +42,7 @@ public class DetailActivity extends AppCompatActivity {
             }
             else {
                 /** Change photo to image id.*/
-                pancake.setImageResource(myFood.getImageResourceID());
+                picTV.setImageResource(myFood.getImageResourceID());
             }
         }
         catch (Exception e) {

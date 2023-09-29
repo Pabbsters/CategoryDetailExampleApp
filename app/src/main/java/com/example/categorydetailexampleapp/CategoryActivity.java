@@ -32,7 +32,11 @@ public class CategoryActivity extends AppCompatActivity {
         ListView listView = (ListView) findViewById(R.id.categoryOptions);
         listView.setAdapter(listAdapter);
 
-        // Create listener to listen for when a Food from the specific Category list is clicked on
+        // use the custom Adapter to design a custom row
+        Adapter myAdapter = new Adapter(this, dataToDisplay);
+        // have the adapter refer to your custom class
+        listView.setAdapter(myAdapter);
+                // Create listener to listen for when a Food from the specific Category list is clicked on
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {

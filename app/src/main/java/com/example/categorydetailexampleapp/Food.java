@@ -36,10 +36,10 @@ public class Food implements Parcelable {
 
     };
     public static final Food[] myLunch = {
-            new Food("Sandwich", 6.99, "4 pancakes", R.drawable.sandwich),
+            new Food("Sandwich", 6.99, "Big, crunchy", R.drawable.sandwich),
     };
     public static final Food[] myDinner = {
-            new Food("Rice", 6.99, "4 pancakes", R.drawable.rice),
+            new Food("Rice", 6.99, "spicy and flavorfull", R.drawable.rice),
     };
 
 
