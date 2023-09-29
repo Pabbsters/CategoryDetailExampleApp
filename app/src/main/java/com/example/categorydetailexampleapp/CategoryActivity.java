@@ -44,7 +44,7 @@ public class CategoryActivity extends AppCompatActivity {
                 Intent intent = new Intent(CategoryActivity.this, DetailActivity.class);
                 // Sends the specific object at index i to the Detail activity
                 // In this case, it is sending the particular Food object
-                intent.putExtra("Chosen Food", dataToDisplay.get(position));
+                 intent.putExtra("Chosen Food", dataToDisplay.get(position));
 
                 startActivity(intent);
             }

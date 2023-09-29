@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <ListView
         android:id="@+id/list_options"
         android:layout_width="match_parent"
@@ -15,24 +16,10 @@
         tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/pancake"
+        android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="@dimen/picSize"
-        android:src="@drawable/pancake" />
-    <ImageView
-        android:id="@+id/waffles"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/picSize"
-        android:src="@drawable/waffles" />
-    <ImageView
-        android:id="@+id/sandwich"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/picSize"
-        android:src="@drawable/sandwich" />
-    <ImageView
-        android:id="@+id/rice"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/picSize"
-        android:src="@drawable/rice" />
+        android:layout_weight="1"
+        android:src="@drawable/coolrock_logo"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat >

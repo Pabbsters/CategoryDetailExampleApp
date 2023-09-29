@@ -79,7 +79,7 @@ public class Food implements Parcelable {
     }
 
     public String toString() {
-        return this.name;
+        return name;
     }
         /**
          * This is what is used when we send the Food object through an intent

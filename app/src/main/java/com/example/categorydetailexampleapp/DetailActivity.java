@@ -32,13 +32,14 @@ public class DetailActivity extends AppCompatActivity {
             TextView descTV = findViewById(R.id.desc);
 
 
-            nameTV.setText(myFood.getName());
-            priceTV.setText("$" + myFood.getPrice());
-            descTV.setText(myFood.getDesc());
 
 
-            if (myFood.getImageResourceID() == 0) {
+
+            if (myFood.getImageResourceID() != 0) {
                 // set a default pic or decide what to do in this case.
+                nameTV.setText(myFood.getName());
+                priceTV.setText("$" + myFood.getPrice());
+                descTV.setText(myFood.getDesc());
             }
             else {
                 /** Change photo to image id.*/
