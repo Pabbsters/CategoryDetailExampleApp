@@ -31,15 +31,21 @@ public class Food implements Parcelable {
         imageResourceID = 0;
     }
     public static final Food[] myBreakfast = {
-            new Food("Pancakes", 6.99, "4 pancakes", R.drawable.pancake),
-            new Food("Waffles", 7.50, "Crispy Golden Brown", R.drawable.waffles)
+            new Food("Pancakes", 10.99, "four Old Fashioned Maple Syrup pancakes", R.drawable.pancake),
+            new Food("Waffles", 7.99, "two Crispy Golden Brown", R.drawable.waffles),
+            new Food("Donut", 2.99, "Chocolate/Strawberry with Sprinkles", R.drawable.donut)
 
     };
     public static final Food[] myLunch = {
-            new Food("Sandwich", 6.99, "Big, crunchy", R.drawable.sandwich),
+            new Food("Sandwich", 8.99, "The Original/ Fresh Veggie", R.drawable.sandwich),
+            new Food("Pasta", 12.99, "Traditional Italian Pasta", R.drawable.pasta),
+            new Food("Pie", 5.99, "Blueberry Flavored", R.drawable.pie)
+
     };
     public static final Food[] myDinner = {
-            new Food("Rice", 6.99, "spicy and flavorfull", R.drawable.rice),
+            new Food("Rice", 11.99, "spicy and flavorful", R.drawable.rice),
+            new Food("Taco", 3.99, "Big, crunchy", R.drawable.taco),
+            new Food("Salad", 6.99, "Seasoned Caesar Salad", R.drawable.salad)
     };
 
 
@@ -142,11 +148,6 @@ public class Food implements Parcelable {
     public void setImageResourceID(int imageResourceID) {
         this.imageResourceID = imageResourceID;
     }
-
-
-
-
-    int[] nums = {1, 2, 3, 4};
 
     @Override
     public int describeContents() {

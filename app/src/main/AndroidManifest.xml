@@ -8,19 +8,19 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/coolrock_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/dinery_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CategoryDetailExampleApp"
         tools:targetApi="31">
         <activity
             android:name=".DetailActivity"
             android:exported="false"
-            android:label= "Choose an Item"
+            android:label= "Item Selected"
             android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".CategoryActivity"
             android:exported="false"
-            android:label= "Choose a category"
+            android:label= "Choose an Item"
             android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MainActivity"

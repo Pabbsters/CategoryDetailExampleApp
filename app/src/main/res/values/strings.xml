@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Ruthwik\'s Dinery</string>
+    <string name="app_name">Ruthwik\'s Dinery- Choose a Category </string>
     <string-array name="options">
         <item>Breakfast</item>
         <item>Lunch</item>
